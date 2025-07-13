@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baranlıoğlu İnşaat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- LOGO ALANI -->
+  <div class="logo-wrapper">
+    <div class="logo-box">
+      <img src="images/arkyok.PNG" alt="Baranlıoğlu İnşaat Logosu">
+    </div>
+  </div>
+
+  <!-- MENÜ ALANI -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">ANA SAYFA</a></li>
+      <li><a href="#Hakkımızda">HAKKIMIZDA</a></li>
+      <li><a href="#projelerimiz">PROJELERİMİZ</a></li>
+      <li><a href="#">HİZMETLERİMİZ</a></li>
+      <li><a href="#iletişim">İLETİŞİM</a></li>
+    </ul>
+  </nav>
+
+  <!-- Devamı (örnek içerik) -->
+  <section class="hero">
+    <h2></h2>
+    
+  </section>
+
+<section class="project-slider" id="projelerimiz">
+  <div class="project-title">
+    <h2>Projelerimiz</h2>
+  </div>
+  <button class="slider-btn left" onclick="slideProjects(-1)">&#10094;</button>
+
+  <div class="projects-wrapper">
+    <div class="project-card">
+      <a href="proje1.html">
+        <img src="images/tajmahal.jpeg" alt="Proje 1">
+        <h3>Royal Taj Mahal</h3>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="proje2.html">
+        <img src="images/rubi.jpeg" alt="Proje 2">
+        <h3>Rubi Platinyum</h3>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="proje3.html">
+        <img src="images/litore.jpeg" alt="Proje 3">
+        <h3>Litore Otel</h3>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="proje4.html">
+        <img src="images/grandalux.jpeg" alt="Proje 4">
+        <h3>Granda Lux</h3>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="proje5.html">
+        <img src="images/proje5.jpg" alt="Proje 5">
+        <h3>Ticari Plaza</h3>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="proje6.html">
+        <img src="images/proje6.jpg" alt="Proje 6">
+        <h3>Ticari Plaza</h3>
+      </a>
+    </div>
+    
+  </div>
+
+  <button class="slider-btn right" onclick="slideProjects(1)">&#10095;</button>
+</section>
+
+<script>
+  const wrapper = document.querySelector('.projects-wrapper');
+  const cards = document.querySelectorAll('.project-card');
+  const step = 320; // Her kartın genişliği + gap
+  const totalCards = cards.length;
+
+  let currentIndex = 0;
+
+  function slideProjects(direction) {
+    currentIndex += direction;
+
+    if (currentIndex >= totalCards) {
+      currentIndex = 0; // sona gelince başa dön
+    }
+
+    if (currentIndex < 0) {
+      currentIndex = totalCards - 1; // baştaysa sona dön
+    }
+
+    const scrollAmount = currentIndex * step;
+    wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+  }
+</script>
+
+<section id="Hakkımızda" class="project-aboutas">
+  <h2>Hakkımızda</h2>
+  <p>1990'den beri değişmeyen kalite ve güvenliğin adresi</p>
+
+</section>
+
+<section id="iletişim" class="touch">
+  <section class="iletisim-section">
+  <div class="iletisim-content">
+    <div class="iletisim-text">
+      <h2>Baranlıoğlu İnşaat</h2>
+
+      <div class="iletisim-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <strong>Adres</strong>
+          <p>Ankara / Mamak<br>5 dakika içinde istediğiniz konumdayız</p>
+        </div>
+      </div>
+
+      <div class="iletisim-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <strong>Telefon</strong>
+          <p>+90 (530) 656 74 05</p>
+        </div>
+      </div>
+
+      <div class="iletisim-item">
+        <i class="fab fa-instagram"></i>
+        <div>
+          <strong>Sosyal Medya</strong>
+          <p>@baranlioglu_insaat</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="iletisim-logo">
+      <img src="images/arkyok.PNG" alt="Baranlıoğlu Logo">
+    </div>
+    
+  
+</section>
+
+  <footer><p>© 2025 Baranlıoğlu İnşaat. Tüm Hakları Saklıdır.</p></footer>
+
+
+</body>
+</html>
+
