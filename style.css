@@ -706,13 +706,13 @@ footer p{
   /* menü */
   .main-nav .menuBtn{
     display: initial;
-    padding: 6px 166px 6px 332px;
-    margin-bottom: 55px;
+    width: 100%;
   }
 
-  .main-nav .menuBtn i{
+  .main-nav .menuBtn #cikartma{
     display: flex;
     justify-content: center;
+    padding: 4px 0px 4px 32px;
   }
   .main-nav ul{
     z-index: 10;
@@ -748,10 +748,11 @@ footer p{
   }
 
   .hero img{
-    width: 100px;
-    height: 150px;
+    padding: 19px 19px 19px 11px;
+    margin: 10px 10px 10px 0px;
+    width: 397px;
+    height: 270px
   }
 
 }
-
 
