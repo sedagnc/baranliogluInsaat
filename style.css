@@ -11,7 +11,8 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: #e2e2e2;
+  background-color:#e2e2e2;
+  
 }
 
 /* LOGO ALANI */
@@ -48,6 +49,20 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
  
 
+.main-nav #menuBtn{
+  display: none;
+}  
+
+.main-nav .menuBtn{
+  font-size: 2rem;
+  color: black;
+  float: right;
+  line-height: 60px;
+  background-color: #4d83a4;
+  margin-right: 2rem;
+  display: none;
+}
+
 .main-nav ul {
   height: 80%;
   background-color: #4d83a4;
@@ -75,20 +90,20 @@ body {
   transition: color 0.3s;
 }
 
+
 .main-nav ul li a:hover {
   color: #ffd700;
 }
 
 
+
 /* HERO */
-.hero {
-  background: url("images/denne.png") center/cover no-repeat;
-  background-position: center;
-  width: 145vh;
+
+.hero img{
   margin: 40px 60px 40px 200px;
   border-radius: 35px;
-  height: 80vh; /* Tam ekran yüksekliği */
-  color: white;
+  height: 80vh;
+  width: 145vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,16 +113,33 @@ body {
   position: relative;
   z-index: 1;
 }
+ /* .hero {
+  background: url("images/denne.png") center/cover no-repeat;
+  background-position: center;
+  width: 145vh;
+  margin: 40px 60px 40px 200px;
+  border-radius: 35px;
+  height: 80vh; /* Tam ekran yüksekliği */
+  /* color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}  */
 
-.hero h2 {
+/* .hero h2 {
   font-size: 32px;
   margin-bottom: 10px;
-}
+} */
 
-.hero p {
+/* .hero p {
   font-size: 18px;
   color: #666;
-}
+} */
 
 /* Projeler sayfası */
 .page-title {
@@ -652,6 +684,36 @@ footer p{
 /* uyumlama */
 
 @media (max-width:873px) {
+  /* logo */
+  .logo-wrapper{
+    width: 91%;
+    height: 110px;
+  }
+  .logo-box{
+    position: relative;
+    display: flex;
+    padding-left: 42px;
+    align-items: center;
+    justify-content: center;
+    bottom: 7px;
+    right: 20px;
+  }
+  .logo-box img {
+    height: 80px;
+    width: 100px;
+  }
+
+  /* menü */
+  .main-nav .menuBtn{
+    display: initial;
+    padding: 6px 166px 6px 332px;
+    margin-bottom: 55px;
+  }
+
+  .main-nav .menuBtn i{
+    display: flex;
+    justify-content: center;
+  }
   .main-nav ul{
     z-index: 10;
     margin-top: 70px;
@@ -677,5 +739,19 @@ footer p{
     display: block;
     font-size: 1.2rem;
   }
+
+  .main-nav #menuBtn:checked~ ul{
+  left: 0;}
+
+  .main-nav #menuBtn:checked~ label.menuBtn i::before{ 
+    content: "\f00d";
+  }
+
+  .hero img{
+    width: 100px;
+    height: 150px;
+  }
+
 }
+
 
