@@ -712,7 +712,6 @@ footer p{
     margin: 0px;
     width: 100%;
     line-height: 0;
-    float: none;
   }
 
   .main-nav .menuBtn #cikartma{
@@ -838,6 +837,7 @@ footer p{
 
 
 }
+
 
 
 
