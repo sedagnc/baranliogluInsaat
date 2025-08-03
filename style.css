@@ -54,7 +54,7 @@ body {
 }  
 
 .main-nav .menuBtn{
-  font-size: 2rem;
+  font-size: 1rem;
   color: black;
   float: right;
   line-height: 60px;
@@ -428,6 +428,7 @@ footer{
   text-align: center;
   border-top: 2px solid #ffcc00;
   height: 50px;
+  width: 100%;
 
 }
 
@@ -686,7 +687,8 @@ footer p{
 @media (max-width:873px) {
   /* logo */
   .logo-wrapper{
-    width: 91%;
+    margin: 0px;
+    width: 100%;
     height: 110px;
   }
   .logo-box{
@@ -706,13 +708,14 @@ footer p{
   /* menü */
   .main-nav .menuBtn{
     display: initial;
+    margin: 0px;
     width: 100%;
   }
 
   .main-nav .menuBtn #cikartma{
     display: flex;
     justify-content: center;
-    padding: 4px 0px 4px 32px;
+    padding: 4px 0px 4px 4px;
   }
   .main-nav ul{
     z-index: 10;
@@ -749,10 +752,66 @@ footer p{
 
   .hero img{
     padding: 19px 19px 19px 11px;
-    margin: 10px 10px 10px 0px;
-    width: 397px;
+    margin: 11px;
+    width: 403px;
     height: 270px
   }
 
+  .project-slider{
+    border-bottom-width: 100% ;
+    height: 446px;
+    padding: 26px 0;
+    margin-top: 27px;
+    
+  }
+
+  .project-title{
+    margin-bottom: 8px;
+  }
+
+  .project-title h2{
+    font-size: 30px;
+
+  }
+
+  .projects-wrapper{
+    padding: 0 29px;
+    gap: 20px;
+  }
+
+  .project-card{
+    width: 352px;
+    height: 311px;
+    padding: 12px;
+
+  }
+
+  .project-aboutas h2{
+    font-size: 30px;
+    padding-left: 25px;
+
+
+  }
+  .project-aboutas h2::after{
+    width: 336px;
+
+  }
+  .touch{
+    height: 351px;
+    padding: 20px;
+  }
+
+  .iletisim-logo{
+    display: none;
+  }
+
+  .footer{
+    margin-top: 12px;
+  }
+
+  
+
+
 }
+
 
