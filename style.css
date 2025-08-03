@@ -711,6 +711,8 @@ footer p{
     display: initial;
     margin: 0px;
     width: 100%;
+    line-height: 0;
+    float: none;
   }
 
   .main-nav .menuBtn #cikartma{
@@ -786,7 +788,12 @@ footer p{
     width: 352px;
     height: 311px;
     padding: 12px;
+    min-width: 300px;
+    min-height: 300px;
 
+  }
+  .project-card img{
+    width: 95%;
   }
 
   .project-aboutas h2{
@@ -796,12 +803,16 @@ footer p{
 
   }
   .project-aboutas h2::after{
-    width: 336px;
+    width: 257px;
 
   }
   .touch{
     height: 351px;
-    padding: 20px;
+    padding: 181px;
+  }
+
+  .iletisim-item{
+    margin-bottom: 12px;
   }
 
   .iletisim-logo{
@@ -809,7 +820,11 @@ footer p{
   }
 
   .footer{
-    margin-top: 12px;
+    margin-top: 4%;
+  }
+
+  .footer p{
+    font-size: 13px;
   }
 
   
@@ -818,10 +833,12 @@ footer p{
 }
 
 
+
   
 
 
 }
+
 
 
 
