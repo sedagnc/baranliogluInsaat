@@ -35,3 +35,24 @@
     thumbs: {
         swiper: thumbSlider,},
     });
+
+
+  // ---- Hamburger Menü Bağlantılarına Tıklayınca Kapat
+  const menuLinks = document.querySelectorAll('.menu-items a');
+  const checkbox = document.getElementById('menuBtn');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      checkbox.checked = false;
+    });
+  });
+
+  const menuCheckbox = document.getElementById('menuBtn');
+
+  menuCheckbox.addEventListener('change', () => {
+    if (menuCheckbox.checked) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+    });
