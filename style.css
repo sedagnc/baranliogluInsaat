@@ -682,6 +682,7 @@ footer p{
     width: 100%;
     line-height: 0;
     
+    
   }
 
   .main-nav .menuBtn #cikartma{
@@ -704,6 +705,7 @@ footer p{
     justify-content: center;
     transform: all.5s;
     left: -100%;
+    transition: right 0.3s ease;
 
   }
   .main-nav ul li{
@@ -715,14 +717,22 @@ footer p{
   .main-nav ul li a{
     display: block;
     font-size: 1.2rem;
+    transition: color 0.3s;
   }
 
   .main-nav #menuBtn:checked~ ul{
   left: 0;}
 
+  .main-nav #menuBtn:checked~ .main-nav li::file-selector-button{
+    left:0;
+  }
+
   .main-nav #menuBtn:checked~ label.menuBtn i::before{ 
     content: "\f00d";
   }
+
+  body.menu-open {
+  overflow: hidden;}
 
   .hero img{
     padding: 19px 19px 19px 19px;
@@ -806,6 +816,7 @@ footer p{
 
 
 }
+
 
 
 
