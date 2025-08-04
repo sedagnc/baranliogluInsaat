@@ -392,51 +392,6 @@ body {
   color: white;
 }
 
-
-.iletişim-içerik strong {
-  font-size: 17px;
-}
-
-.iletişim-içerik{
-  display: flex;
-  justify-content: center; /* Ortala */
-  flex-wrap: wrap; /* Ekran daralırsa alta geçsin */
-  gap: 20px; /* Kutular arası boşluk */
-  max-width: 1000px;
-  margin: 0 auto;
-
-  
-}
-  
-.iletişim-bilgiler{
-  color: black;
-  width: 220px;
-  height: 120px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Yatay ortalama */
-  text-align: center;
-  margin-top: 30px;
-
-
-  
-}
-
-footer{
-  text-align: center;
-  border-top: 2px solid #ffcc00;
-  height: 50px;
-  width: 100%;
-  margin-top: 3%;
-
-}
-
-footer p{
-  color: #0c282a;
-}
-
 /* .iletisim-section {
   background-color: #0c2f40;
   color: white;
@@ -500,6 +455,19 @@ footer p{
   height: auto;
   border-radius: 12px;
 }
+
+footer{
+  text-align: center;
+  border-top: 2px solid #ffcc00;
+  height: 28px;
+  width: 100%;
+
+}
+
+footer p{
+  color: #0c282a;
+}
+
 
 /* rubiininkiler */
 .project-detail {
@@ -708,10 +676,12 @@ footer p{
 
   /* menü */
   .main-nav .menuBtn{
+    background-color: #4d83a4;
     display: initial;
     margin: 0px;
     width: 100%;
     line-height: 0;
+    
   }
 
   .main-nav .menuBtn #cikartma{
@@ -806,6 +776,7 @@ footer p{
 
   }
   .touch{
+    position: relative;
     height: 351px;
     padding: 181px;
   }
@@ -814,29 +785,28 @@ footer p{
     margin-bottom: 12px;
   }
 
+  .iletisim-text{
+    position: absolute;
+    left: 16px;
+  }
+
   .iletisim-logo{
     display: none;
   }
 
-  .footer{
-    margin-top: 4%;
+  footer{
+    display: none;
   }
-
-  .footer p{
+/* 
+  footer p{
     font-size: 13px;
-  }
+  } */
 
   
 
 
 }
 
-
-
-  
-
-
-}
 
 
 
