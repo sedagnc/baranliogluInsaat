@@ -844,13 +844,15 @@ footer p{
     display: none;
   }
 
-  .about-cards {
+ .about-cards {
     flex-direction: column;
     align-items: center;
   }
 
   .about-card {
-    max-width: 100%;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
   }
 /* 
   footer p{
@@ -861,6 +863,7 @@ footer p{
 
 
 }
+
 
 
 
