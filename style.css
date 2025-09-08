@@ -843,15 +843,25 @@ footer p{
   footer{
     display: none;
   }
+
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card {
+    max-width: 100%;
+  }
 /* 
   footer p{
     font-size: 13px;
   } */
-
+  
   
 
 
 }
+
 
 
 
